@@ -43,7 +43,7 @@ public class PDFMaker {
 			Font.NORMAL);
 
 
-	public PdfPTable tableCreater(int size, int a[]) throws DocumentException {
+	private PdfPTable tableCreater(int size, int a[]) throws DocumentException {
 
 		PdfPTable table = new PdfPTable(size);
 
@@ -54,7 +54,7 @@ public class PDFMaker {
 		return table;
 	}
 
-	public void cellCreater(PdfPTable table) {
+	private void cellCreater(PdfPTable table) {
 
 		PdfPCell pc = new PdfPCell(new Phrase("UserId", catFont));
 		pc.setPadding(4);
@@ -86,7 +86,7 @@ public class PDFMaker {
 
 	}
 
-	public void addRecordInTable(PdfPTable table, String value) {
+	private void addRecordInTable(PdfPTable table, String value) {
 
 		PdfPCell pc = new PdfPCell(new Phrase(value, smallBold));
 
@@ -98,7 +98,7 @@ public class PDFMaker {
 
 	}
 
-	public void title(Document document, String title) throws DocumentException {
+	private void title(Document document, String title) throws DocumentException {
 		Paragraph ph = new Paragraph();
 		Chunk c1 = new Chunk(title, catFont);
 		ph.add(c1);
@@ -107,7 +107,7 @@ public class PDFMaker {
 
 	}
 
-	public void makeCreateDate(Document document) throws DocumentException {
+	private void makeCreateDate(Document document) throws DocumentException {
 
 		Paragraph ph = new Paragraph();
 
@@ -128,7 +128,7 @@ public class PDFMaker {
 
 	}
 
-	public void space(Document document) throws DocumentException {
+	private void space(Document document) throws DocumentException {
 
 		Paragraph p = new Paragraph(" ");
 
