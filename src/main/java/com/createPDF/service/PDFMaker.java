@@ -1,4 +1,4 @@
-package com.LoginDemoProject.service;
+package com.createPDF.service;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -42,56 +42,6 @@ public class PDFMaker {
 	private static Font smallBold = new Font(Font.FontFamily.TIMES_ROMAN, 12,
 			Font.NORMAL);
 
-	public static void main(String atr[]) {
-
-		PDFMaker maker = new PDFMaker();
-
-		JSONObject object = new JSONObject();
-
-		JSONArray arr = new JSONArray();
-
-		JSONObject object1 = new JSONObject();
-		JSONObject object2 = new JSONObject();
-		JSONObject object3 = new JSONObject();
-
-		// id name company ctc
-
-		object1.put("id", "1");
-		object1.put("name", "Nabeel");
-		object1.put("company", "Aspiring Wings Technologies");
-		object1.put("ctc", "240000");
-
-		object2.put("id", "1");
-		object2.put("name", "Nabeel");
-		object2.put("company", "Aspiring Wings Technologies");
-		object2.put("ctc", "240000");
-
-		object3.put("id", "1");
-		object3.put("name", "Nabeel");
-		object3.put("company", "Aspiring Wings Technologies");
-		object3.put("ctc", "240000");
-
-		arr.add(object1);
-		arr.add(object2);
-		arr.add(object3);
-
-		object.put("userDetail", arr);
-
-		System.out.println(object);
-
-		try {
-			maker.make(object);
-
-			System.out.println("done");
-		} catch (FileNotFoundException | DocumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (InvalidDataException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-	}
 
 	public PdfPTable tableCreater(int size, int a[]) throws DocumentException {
 

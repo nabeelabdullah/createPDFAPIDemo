@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.LoginDemoProject</groupId>
-	<artifactId>LoginDemoProject</artifactId>
+	<groupId>com.createPDF</groupId>
+	<artifactId>createPDF</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 	<name>Assignment</name>
-	<description>LoginDemoProject project for Spring Boot</description>
+	<description> project for Spring Boot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -61,11 +61,7 @@
 
 
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.5</version>
-		</dependency>
+	
 
 
 	</dependencies>

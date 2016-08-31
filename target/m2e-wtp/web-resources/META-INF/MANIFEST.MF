@@ -2,10 +2,9 @@ Manifest-Version: 1.0
 Implementation-Vendor: Pivotal Software, Inc.
 Implementation-Title: Assignment
 Implementation-Version: 0.0.1-SNAPSHOT
-Implementation-Vendor-Id: com.LoginDemoProject
+Implementation-Vendor-Id: com.createPDF
 Build-Jdk: 1.7.0_80
 Built-By: zishan
 Created-By: Maven Integration for Eclipse
-Implementation-URL: http://projects.spring.io/spring-boot/LoginDemoPro
- ject/
+Implementation-URL: http://projects.spring.io/spring-boot/createPDF/
 
